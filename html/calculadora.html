@@ -7,22 +7,9 @@
     <!--Icone-->
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
-    
+    <link rel="stylesheet" type="text/css" href="../css/estilo2.css">
+
     <title>Calculadora</title>
-    <style>
-        @charset "utf-8";
-        @font-face {
-        font-family: 'fonte2';
-        src: url('./fonts/Courgette-Regular.ttf');
-        }
-        body {
-            color: lightgray;
-            background-color: #242424;
-            font-family: 'fonte2', sans-serif;
-            text-decoration: none;
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
@@ -31,6 +18,9 @@
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="somar" onclick="somar()">
     <div id="res">Resultado</div>
+
+    <p id="btnmenu" ></p><a href="../index.html" >Menu</a></p>
+
     <script>
         function somar() {
             var tn1 = window.document.getElementById('txtn1')

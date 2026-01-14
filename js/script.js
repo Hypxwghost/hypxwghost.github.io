@@ -16,13 +16,16 @@ function carregar() {
         if (gtseconds < 10) {
             gtseconds = `0${gtseconds}`
         }
-        hours.textContent = `Agora são ${gthours} horas,${gtminutes} minutos e ${gtseconds} segundos`
+        hours.textContent = `Azora: ${gthours}:${gtminutes}:${gtseconds}`
     }
+
     var tictac = setInterval(hours, 1000)
     hours()
+
     var data = new Date //mostra mensagem conforme a hora
     var hora = data.getHours()
     var mensagem = document.getElementById('msg2')
+
     if (hora >= 0 && hora <= 12) {
         //Bom Dia!!
         mensagem.textContent = `Bom Dia!`
