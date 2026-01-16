@@ -7,10 +7,24 @@
 	<title>About Me</title>
 </head>
 <body>
-	<h1>About Me</h1>
+    <!-- Seção about me e background -->
+    <div class="bg"></div>
+    <div class="aboutme">
+        <h1>About Me</h1>
+        <p>AKA Khalli <span id="idade">a</span> yo <br>Ponta Grossa - PR <br> Furry :3 </p>
+    </div>
 
-    <p>AKA Khalli <span id="idade">a</span> yo</p>
+    <!-- Listagem de coisas que gosto -->
+    <h2 id="aboutme">I Like:</h2>
+    <ul>
+        <li>Gaming (Arma 3, Arma Reforger)</li>
+        <li>Programming (Python, C#)</li>
+        <li>Anything related to tech</li>
+        <li>Music</li>
+    </ul>
 
+
+    <!-- Atualiza idade automaticamente -->
     <script>
     var ano = new Date().getFullYear()
     var idade = ano - 2002 
