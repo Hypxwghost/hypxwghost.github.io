@@ -16,6 +16,32 @@ div#msg,#msg2 {
     color: rgb(188, 87, 255)
 }
 
+/* Página specs kamov */
+div#kamov {
+    text-align: center;
+    margin: 0 15%;
+    color: rgb(214, 214, 214);
+}
+
+#kamov li {
+    margin-top: 10px;
+    margin-left: 12%;
+}
+
+#kamov h1 {
+    color: rgb(255, 247, 179);
+}
+
+#kamov h2, strong {
+    color: rgb(255, 247, 179);
+    margin-top: 50px;
+}
+
+#kamov p, li {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 a {
     color: rgb(255, 255, 255);
 }
@@ -62,6 +88,19 @@ a:hover {
     width: 100%;
     height: 100%;
     background-image: url('https://r4.wallpaperflare.com/wallpaper/241/739/630/military-helicopters-kamov-ka-52-alligator-wallpaper-d3cad3aab8252cfd98325e63c1580251.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.bgka522 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/russian-air-force-kamov-ka-52-wallpaper-0317c62e3b4ce3501e5ec82c8c4489ce.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;
