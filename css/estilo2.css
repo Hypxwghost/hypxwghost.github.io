@@ -42,6 +42,32 @@ a:hover {
     opacity: 0.3;
 }
 
+.bggalaxia {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2024/03/STScI-01HQP6MAB9N9NS69HBBA9RN5KK.png?w=2000&h=1698&fit=crop&crop=faces%2Cfocalpoint');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.bgka521 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/241/739/630/military-helicopters-kamov-ka-52-alligator-wallpaper-d3cad3aab8252cfd98325e63c1580251.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.3;
+}
+
 ul {
     text-align: left;
     display: inline-block;
