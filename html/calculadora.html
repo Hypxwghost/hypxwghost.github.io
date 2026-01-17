@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=pt-br>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,30 +9,30 @@
     <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
-    <title>Calculadora</title>
+    <title>Calculator</title>
 </head>
 
 <body>
-    <h1>Digite números abaixo:</h1>
+    <h1>Enter numbers below:</h1>
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <input type="button" value="add" onclick="sum()">
+    <div id="res">Result</div>
 
     <p id="btnmenu" ></p><a href="../index.html" >Menu</a></p>
 
     <script>
-        function somar() {
+        function sum() {
             var tn1 = window.document.getElementById('txtn1')
             var tn2 = window.document.querySelector('input#txtn2')
             var res = window.document.getElementById('res')
             if (tn1.value == 0 && tn2.value == 0) {
-                window.alert('INSIRA NÙMEROS VÀLIDOS!!')
+                window.alert('Insert valid numbers!!')
             }else
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
             var s = n1 + n2
-            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+            res.innerHTML = `The sum between ${n1} and ${n2} is equal to <strong>${s}</strong>`
         }
     </script>
 </body>

@@ -1,4 +1,4 @@
-function carregar() {
+function load() {
     function hours() { //mostra a hora em tempo real
         var hours = document.getElementById('msg')
         var date1 = new Date()
@@ -16,24 +16,24 @@ function carregar() {
         if (gtseconds < 10) {
             gtseconds = `0${gtseconds}`
         }
-        hours.textContent = `Azora: ${gthours}:${gtminutes}:${gtseconds}`
+        hours.textContent = `Time: ${gthours}:${gtminutes}:${gtseconds}`
     }
 
     var tictac = setInterval(hours, 1000)
     hours()
 
-    var data = new Date //mostra mensagem conforme a hora
-    var hora = data.getHours()
-    var mensagem = document.getElementById('msg2')
+    var date = new Date //mostra mensagem conforme a hora
+    var time = date.getHours()
+    var msg = document.getElementById('msg2')
 
-    if (hora >= 0 && hora <= 12) {
+    if (time >= 0 && time <= 12) {
         //Bom Dia!!
-        mensagem.textContent = `Bom Dia!`
-    } else if (hora > 12 && hora <= 18) {
+        msg.textContent = `Good Morning!`
+    } else if (time > 12 && time <= 18) {
         // Boa Tarde
-        mensagem.textContent = 'Boa Tarde!'
+        msg.textContent = 'Good Afternoon!'
     } else {
         // Boa Noite
-        mensagem.textContent = 'Boa Noite!'
+        msg.textContent = 'Good Night!'
     }
 }
